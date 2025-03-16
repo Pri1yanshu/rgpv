@@ -44,7 +44,7 @@ const Notice = ({ message }) => {
           {/* <h2 className="text-lg font-semibold text-blue-800">Notice</h2> */}
 <div className=" flex justify-center items-center w-full my-2 text-lg tracking-tight">
      <ul>
-       <li>Lorem ipsum dolor sit amet consectetur.</li>
+      
           <li>NOTICE 1.</li>
           <li>NOTICE 2.</li>
           <li>NOTICE 3.</li>
