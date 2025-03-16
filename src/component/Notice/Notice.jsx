@@ -40,7 +40,7 @@ const Notice = ({ message }) => {
         </button>
            
         <div className="flex flex-col items-center gap-3">
-          <div>
+          <div className="flex item-center justify-center">
              <Info className="w-8 h-8 text-blue-600" /> 
 
            <h2 className="text-lg font-semibold text-blue-800"> Notice</h2> </div>
