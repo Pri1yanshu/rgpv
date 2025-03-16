@@ -39,9 +39,9 @@ const Notice = ({ message }) => {
           <XCircle className="w-6 h-6" />
         </button>
         <div className="flex items-center gap-3">
-          {/* <Info className="w-8 h-8 text-blue-600" /> */}
+           <Info className="w-8 h-8 text-blue-600" /> 
 
-          {/* <h2 className="text-lg font-semibold text-blue-800">Notice</h2> */}
+           <h2 className="text-lg font-semibold text-blue-800">Notice</h2> 
 <div className=" flex justify-center items-center w-full my-2 text-lg tracking-tight">
      <ul>
       
