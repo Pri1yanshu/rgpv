@@ -69,7 +69,7 @@ import Slider from "../../component/Slider/Slider.jsx";
 import { motion } from "framer-motion";
 import FacultySection from "../../component/ToolTip/FacultySection.jsx";
 import Hod from "../../component/Hod/Hod.jsx";
-import Dashboard from "../../component/DashBoard/DashBoard.jsx";
+import Dashboard from "../../component/Dashboard/Dashboard.jsx";
 const Infrastructure = React.lazy(() => import('../../component/Infrastructure/Infrastructure.jsx'));
 // const Welcome = React.lazy(() => import('../../component/Welcome/Welcome.jsx'));
 // import BentoGrid from "../../component/Grid/BentoGrid.jsx";
