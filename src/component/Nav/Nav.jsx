@@ -29,6 +29,7 @@ function Nav() {
   return (
     <>
     <div className="sticky top-0 z-50">
+    <div className="bg-orange-500 lg:h-[4px] h-[2px] w-full"></div>
       <div className="flex justify-between bg-[#184852] text-white p-4 relative  ">
         
 
@@ -115,6 +116,17 @@ function Nav() {
           exact to="/placement">
             Placement
           </NavLink>
+
+          <NavLink 
+          className={({ isActive }) =>
+            isActive 
+              ? " text-lg px-3 py-2 rounded-md transition-all bg-white text-[#184852] font-bold"
+              : "text-lg px-3 py-2 rounded-md transition-all hover:bg-white/20"
+          }
+          exact to="/events">
+            Events
+          </NavLink>
+
           <NavLink 
           className={({ isActive }) =>
             isActive 

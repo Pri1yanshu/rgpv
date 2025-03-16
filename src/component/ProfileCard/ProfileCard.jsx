@@ -58,7 +58,7 @@ function ProfileCard({ address, image, name, designation, experience, mail, phon
   return (
     <div className="relative bg-white shadow-xl rounded-xl p-6 text-center transform transition duration-500 hover:scale-105 hover:shadow-2xl border border-gray-200 overflow-hidden">
       <div className="flex flex-col items-center">
-        <img src={image} alt={name} className="w-32 h-32 rounded-full border-4 border-gray-300 shadow-lg" />
+        <img src={image} loading="lazy"  alt={name} className="w-32 h-32 rounded-full border-4 border-gray-300 shadow-lg" />
         <h3 className="text-2xl font-bold mt-4 text-gray-900">{name}</h3>
         <p className="text-indigo-600 text-sm font-medium">{designation}</p>
         <p className="text-gray-600 mt-2 text-base font-semibold">Experience: {experience}</p>

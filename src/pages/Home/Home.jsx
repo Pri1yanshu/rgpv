@@ -61,21 +61,28 @@
 
 
 import React from "react";
+import { Suspense } from "react";
 import Welcome from "../../component/Welcome/Welcome.jsx";
 import Footer from "../../component/Footer/Footer.jsx";
 import Slider from "../../component/Slider/Slider.jsx";
-import Infrastructure from "../../component/Infrastructure/Infrastructure.jsx";
+// import Infrastructure from "../../component/Infrastructure/Infrastructure.jsx";
 import { motion } from "framer-motion";
 import FacultySection from "../../component/ToolTip/FacultySection.jsx";
-
+import Hod from "../../component/Hod/Hod.jsx";
+import Dashboard from "../../component/DashBoard/DashBoard.jsx";
+const Infrastructure = React.lazy(() => import('../../component/Infrastructure/Infrastructure.jsx'));
+// const Welcome = React.lazy(() => import('../../component/Welcome/Welcome.jsx'));
+// import BentoGrid from "../../component/Grid/BentoGrid.jsx";
 function Home() {
   return (
     <div className="w-full">
       {/* 🔹 Hero Section */}
       <Welcome />
+      
 
       {/* 🔹 Gallery Section */}
-      <section className="bg-[#184252] text-white py-10">
+      <Suspense fallback={<div>Loading...</div>}>
+        <section className="bg-[#184252] text-white py-10">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -88,13 +95,25 @@ function Home() {
           <Slider />
         </div>
       </section>
+
+      </Suspense>
+
+    
         {/* ToolTip is used for faculty   */}
-      {/* <FacultySection/> */}
+      
 
       {/* 🔹 Infrastructure Section */}
+      <Suspense fallback={<div>Loading...</div>}>
       <Infrastructure />
-
+      </Suspense>
+      <Hod/>
       {/* 🔹 Footer Section */}
+      <Dashboard/>
+
+      
+     <FacultySection/>
+     {/* <BentoGrid/> */}
+
       <Footer />
     </div>
   );

@@ -78,7 +78,7 @@ function Slider() {
             className="w-full h-[400px] flex justify-center items-center"
           >
             <img 
-              src={img} 
+              src={img} loading="lazy"  
               alt={`Gallery Image ${index + 1}`} 
               className="w-full h-full object-cover rounded-xl"
             />

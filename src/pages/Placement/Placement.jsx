@@ -1,7 +1,6 @@
 import React from "react";
 // import "./Placement.css";
 import AboutPlacement from "../../component/AboutPlacement/AboutPlacement.jsx";
-import RecruiterPlacement from "../../component/RecruiterPlacement/Recruiter.jsx";
 import Footer from "../../component/Footer/Footer.jsx";
 import CompanyTable from "../../component/CompanySelectionData/CompanySelectionData.jsx";
 function Placement() {
