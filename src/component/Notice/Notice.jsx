@@ -38,7 +38,8 @@ const Notice = ({ message }) => {
         >
           <XCircle className="w-6 h-6" />
         </button>
-        <div className="flex items-center gap-3">
+           
+        <div className="flex flex-col items-center gap-3">
            <Info className="w-8 h-8 text-blue-600" /> 
 
            <h2 className="text-lg font-semibold text-blue-800">Notice</h2> 
@@ -49,6 +50,7 @@ const Notice = ({ message }) => {
           <li>NOTICE 2.</li>
           <li>NOTICE 3.</li>
           <li>NOTICE 4.</li>
+     
           
 </ul>
 </div>
